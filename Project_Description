@@ -1,0 +1,19 @@
+This is the Second assignment of Advanced Robot Programming which has been done by the Robotics Engineering students by designing and developing the hared memory in which two processes operate simultaneously. 
+
+In our case we don't have a camera, so we will simulate the creation of the moving image using an ncurses window. Using arrow keys, we will move a spot in a window to simulate the perception of the camera. The spot that we will see by moving will produce the creation of a realistic RGB image (a circle, or a square, or similar) in the simulated, shared, video memory
+
+
+
+a) The master process responsible of spawning the other process
+
+b) Process A, which simulates capture from a video camera and fills the video memory.
+
+c) Process B will simulate the extraction of a feature from the acquired moving image instead. For simplicity, the image in the video memory will be scanned and the center of the image will be extracted.
+
+Two ncurses window will spawn:
+
+1) Using arrow keys, we will move a spot in a window to simulate the perception of the camera. The spot that we will see by moving will produce the creation of a realistic RGB image. By pressing a key, or by operating the mouse on a button, a snapshot of the image memory will be saved on a .bmp file.
+
+2) In a second ncurses window, also 80 x 30, the position trace of the center of the image will be shown.
+
+
